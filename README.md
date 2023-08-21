@@ -1,4 +1,7 @@
-# java-fractal-lands
+# Fractal Lands 3D
+<img src="java3d.gif" alt="Alt Text">
+
+
 The "FractalLand3D" Java code is a program that generates a 3D fractal landscape using a mesh of textured squares. The landscape's bumpiness can be adjusted through a flatness value provided either as a command-line argument or with a default value. The user can navigate and explore this generated landscape using a set of movement controls similar to a first-person shooter game.
 
 Here's a breakdown of the main components and functionalities of the code:
@@ -27,6 +30,3 @@ main
 Method: The entry point of the program.
 Instantiates the FractalLand3D class to start the application.
 Overall, this Java code defines a graphical application that generates a 3D fractal landscape with adjustable bumpiness. Users can navigate and explore the landscape using predefined movement controls. The flatness parameter affects the appearance of the landscape, with higher values yielding smoother landscapes and lower values producing rougher ones. The program provides command-line flexibility for specifying the flatness value or falls back to a default value if no arguments are given.
-
-# Fractal Lands 3D
-<img src="java3d.gif" alt="Alt Text">
