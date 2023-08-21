@@ -3,32 +3,28 @@ The "FractalLand3D" Java code is a program that generates a 3D fractal landscape
 
 Here's a breakdown of the main components and functionalities of the code:
 
-Imports and Libraries:
+Imports and Libraries: The program imports the necessary classes from the javax.swing and java.awt packages to create the graphical user interface (GUI) and manage window components.
 
-The program imports the necessary classes from the javax.swing and java.awt packages to create the graphical user interface (GUI) and manage window components.
-FractalLand3D Class:
-
-This class extends JFrame to create the main application window.
+FractalLand3D Class: This class extends JFrame to create the main application window.
 It holds constants for default and allowable ranges of the "flatness" parameter that affects the landscape's bumpiness.
 The constructor takes a command-line argument (flatness value) and initializes the GUI components.
-Constructor:
 
-The constructor of the FractalLand3D class takes a single command-line argument (the flatness value) if provided.
+Constructor: The constructor of the FractalLand3D class takes a single command-line argument (the flatness value) if provided.
 It processes the command-line argument and either uses the provided value or the default value.
 The WrapFractalLand3D class is instantiated, passing the determined flatness value to it.
-processArgs Method:
+processArgs 
 
-This private method processes the command-line arguments and retrieves the flatness value.
+Method: This private method processes the command-line arguments and retrieves the flatness value.
 If no arguments are provided, the default flatness value is used.
 If more than one argument is provided, the usage information is displayed, and the program exits.
-getFlatness Method:
+getFlatness 
 
-This private method attempts to parse the input argument as a double value.
+Method: This private method attempts to parse the input argument as a double value.
 It validates the parsed value to ensure it falls within the acceptable range defined by MIN_FLAT and MAX_FLAT constants.
 If the parsed value is not valid, the default flatness value is used.
-main Method:
+main 
 
-The entry point of the program.
+Method: The entry point of the program.
 Instantiates the FractalLand3D class to start the application.
 Overall, this Java code defines a graphical application that generates a 3D fractal landscape with adjustable bumpiness. Users can navigate and explore the landscape using predefined movement controls. The flatness parameter affects the appearance of the landscape, with higher values yielding smoother landscapes and lower values producing rougher ones. The program provides command-line flexibility for specifying the flatness value or falls back to a default value if no arguments are given.
 
